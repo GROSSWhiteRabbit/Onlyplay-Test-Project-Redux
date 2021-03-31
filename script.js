@@ -46096,6 +46096,9 @@ function Squares() {
 
     const squares =[];
     const squaresArr = [[],[],[]];
+
+
+
     const handleClickSquare = (i,j)=>{
         const {arr, stateGame, pictureNow, stateAi} = Object(_store__WEBPACK_IMPORTED_MODULE_4__["getState"])();
 
@@ -46130,7 +46133,8 @@ function Squares() {
             const wrappSquare = new Container();
             wrappSquare.x = 100*j;
             wrappSquare.y = 100*i;
-
+            wrappSquare.cursor = 'pointer'
+            
             const square = new Graphics();
             square.beginFill(0xe9e9e9);
             square.lineStyle(2);
